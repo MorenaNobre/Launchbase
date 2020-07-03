@@ -35,7 +35,7 @@
 
 <p>
 
-[x] [Building Foodfy](construindo_foodfy)
+- [x] [Building Foodfy](construindo_foodfy)
 
 </p>
 

@@ -35,13 +35,13 @@
 
 <p>
 
-[x] [Foodfy](Foodfy)
+- [x] [Foodfy](Foodfy)
 
-[x] [Starting on Frontend](iniciando_no_frontend)
+- [x] [Starting on Frontend](iniciando_no_frontend)
 
-[x] [Starting on Backend](iniciando_no_backend)
+- [x] [Starting on Backend](iniciando_no_backend)
 
-[x] [Starting with Javascript](iniciando_no_javascript)
+- [x] [Starting with Javascript](iniciando_no_javascript)
 
 </p>
 
