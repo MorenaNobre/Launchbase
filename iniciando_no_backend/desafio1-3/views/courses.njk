@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Rocketseat Conteúdos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Bootcamp Rocketseat</h1>
+
+    <section class="cards">
+
+        <div class="card" id="starter">
+            <div class="card__image-container">
+                <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="starter">
+            </div>
+            <div class="card__content">
+                <p>
+                    <b id="b-1">Torne-se um programador desejado</b> no mercado com esses cursos gratuitos</p>
+            </div>
+            <div class="card__info">
+                <p>5 módulos</p>
+                <p class="card__price" id="color-starter">Gratuito</p>
+            </div>
+        </div>
+
+        <div class="card" id="launchbase">
+            <div class="card__image-container">
+                <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="launchbase">
+            </div>
+            <div class="card__content">
+                <p>
+                    <b id="b-2">Domine a programação do zero</b> e tenha acesso ás melhores oportunidades do mercado</p>
+            </div>
+            <div class="card__info">
+                <p>14 módulos</p>
+                <p class="card__price" id="color-launchbase">Pago</p>
+            </div>
+        </div>
+
+        <div class="card" id="gostack">
+            <div class="card__image-container">
+                <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="gostack">
+            </div>
+            <div class="card__content">
+                <p>
+                    <b id="b-3">Treinamento imersivo</b> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+            </div>
+            <div class="card__info">
+                <p>16 módulos</p>
+                <p class="card__price" id="color-gostack">Pago</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="max-modal">
+                <span class="material-icons">launch</span>
+            </a>
+            <a class="close-modal">
+                <span class="material-icons">cancel</span>
+            </a>
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+{% endblock %}

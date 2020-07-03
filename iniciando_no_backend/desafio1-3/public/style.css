@@ -1,0 +1,237 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
+
+:root{
+    --color-purple: #7159c1;
+    --color-orange: #fd951f;
+    --color-green: #04d361;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: #282a36;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-purple);
+}
+header div{
+    text-align: center;
+}
+header div a{
+    color: white;
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+header div a:hover{
+    color: var(--color-purple);
+    transition: 400ms;
+}
+.content{
+    text-align: center;
+    padding: 40px;
+}
+.content img{
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--color-purple);
+}
+.content h1{
+    padding: 10px;
+    font-size: 25px;
+}
+.content p{
+    max-width: 1000px;
+    margin: auto ;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+.lista ul{
+    text-align: center;
+    margin-bottom: 32px;
+}
+.lista ul h3{
+    padding: 0 32px 32px 32px;
+}
+.lista ul li{
+    display: inline;
+    padding: 0 32px 32px 32px;
+}
+footer{
+    background: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--color-purple);
+    padding: 15px;
+    text-align: right;
+}
+.redes a img{
+    height: 32px;
+    padding: 0 15px;
+}
+.redes a img:hover{
+    height: 40px;
+}
+
+/*===CARDS===*/
+h1{
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    gap: 70px;
+    padding: 20px;
+}
+.card{
+    background-color: #242630;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 32px;
+}
+#starter:hover{
+    border: 1px solid var(--color-purple)
+}
+#launchbase:hover{
+    border: 1px solid var(--color-orange);
+}
+#gostack:hover{
+    border: 1px solid var(--color-green);
+}
+.card__image-container img{
+    width: 100%;
+    max-height: 200px;
+}
+.card__content,
+.card__info{
+    padding: 20px;
+    margin: 20px;
+}
+.card__content p{
+    font-size: 20px;
+    text-align: left;
+}
+.card__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    font-size: 20px;
+}
+#color-starter{
+    background-color: var(--color-purple);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+#color-launchbase{
+    background-color: var(--color-orange);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+#color-gostack{
+    background-color: var(--color-green);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+#b-1{
+    color: var(--color-purple);
+}
+#b-2{
+    color: var(--color-orange);
+}
+#b-3{
+    color: var(--color-green);
+}
+
+/*===MODAL===*/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: #29292e;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+}
+.modal .close-modal{
+    background-color: rgb(106, 110, 110);
+    border-radius: 20%;
+    padding: 5px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal .max-modal{
+    background-color: rgb(106, 110, 110);
+    border-radius: 20%;
+    padding: 5px;
+    color: white;
+    position: absolute;
+    right: 70px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*===MODAL.ACTIVE===*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+iframe{
+    width: 99%;
+    height: 90%;
+    position: absolute;
+    top: 9%;
+    border-radius: 10px;
+}
+
+/*===MAXIMIZE.ACTIVE===*/
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+/*===NOT-FOUND===*/
+.not-found{
+    text-align: center;
+    margin-top: 55px;
+}
+.not-found img {
+    height: 550px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.not-found img:hover{
+    border: 2px solid var(--color-green);
+}

@@ -1,0 +1,57 @@
+{% extends "layout.njk" %}
+
+{% block head %} 
+    <title>Rocketseat Sobre</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    <section class="grid1">
+
+        <div class="content">
+            <img src="{{ about.img }}" alt="logoRocket">
+            <p>{{ about.description }}</p>
+        </div>
+
+        <div class="videos">
+            <div class="img-youtube">
+                <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg" target="_blank"><img src="./img/youtube-rocket.svg" alt="" class="youtube"></a>
+            </div>
+            <div class="sidebar">            
+                <a href="https://www.youtube.com/watch?v=GykTLqODQuU&t=10s" target="_blank"><img src="https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg" alt=""></a>
+                <p>Formulário Animado com JS puro e CSS Animation | Mayk Brito</p>
+            </div>
+            <div class="sidebar">            
+                <a href="https://www.youtube.com/watch?v=HN1UjzRSdBk" target="_blank"><img src="https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt=""></a>
+                <p>Desvendando o CSS Grid na prática | Mayk Brito</p>
+            </div>
+            <div class="sidebar">            
+                <a href="https://www.youtube.com/watch?v=GSqR2i-Pq6o&t=16s" target="blank"><img src="https://img.youtube.com/vi/GSqR2i-Pq6o/maxresdefault.jpg" alt=""></a>
+                <p>Desvendando a variável this no Javascript | Mayk Brito</p>
+            </div>
+        </div>
+        
+        <div class="lista">
+            <ul class="tech">
+            <h3>{{ about.company_works}}</h3>               
+            {% for list in about.list %}
+            <li>
+                <img src="{{list.tech}}" alt="">
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+        
+    </section>  
+
+    <footer>
+        <div class="redes">
+            {% for link in about.link %}                
+                <a href="{{ link.url }}" target="_blank"><img src="{{ link.img }}" alt=""></a>
+            {% endfor %}
+        </div>
+    </footer>
+
+{% endblock %}
