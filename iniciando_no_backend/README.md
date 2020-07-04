@@ -17,10 +17,18 @@
 <h1 align="center">Backend Challenges</h1>
 
 <p align="center">
+  <a href="#apresentação-da-aplicação">Application Presentation</a>&nbsp;&nbsp;|&nbsp;
   <a href="#sobre-a-next-level-week">Backend Challenges</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#sobre-a-next-level-week">Challenges</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
+<br>
+
+## Application Presentation
+
+<div align="center">
+  <img alt="backend-challenge" src="../img/desafio3-3.gif" width="100%">
+</div>
 <br>
 
 ## Backend Challenges
@@ -35,11 +43,11 @@
 
 <p>
 
-[x] [Challeng One](desafio1-3)
+- [x] [Challeng One](desafio1-3)
 
-[x] [Challenge Two](desafio2-3)
+- [x] [Challenge Two](desafio2-3)
 
-[x] [Challenge Three](desafio3-3)
+- [x] [Challenge Three](desafio3-3)
 
 </p>
 
