@@ -42,7 +42,7 @@
 
 <p>
 
-- [x] [Building Foodfy](construindo_foodfy)
+- [x] [Building Foodfy](construindo_foody)
 - [x] [Refactoring Foodfy](refactoring_foodfy)
 
 
