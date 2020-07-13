@@ -17,11 +17,18 @@
 <br>
 
 <p align="center">
-  <a href="#sobre-a-next-level-week">Foodfy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#sobre-a-next-level-week">Foodfy Steps</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#Application Presentation">Application Presentation</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#Foodfy">Foodfy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#Foodfy Steps">Foodfy Steps</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
+
+##Application Presentation
+
+<div align="center">
+  <img alt="refactoring_foodfy" src="../Foodfy/refactoring_foodfy/assets/foodfy-refactored.gif" width="100%">
+</div>
 
 ## Foodfy
 
@@ -36,6 +43,8 @@
 <p>
 
 - [x] [Building Foodfy](construindo_foodfy)
+- [x] [Refactoring Foodfy](refactoring_foodyfy)
+
 
 </p>
 
