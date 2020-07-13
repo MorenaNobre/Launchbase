@@ -17,14 +17,14 @@
 <br>
 
 <p align="center">
-  <a href="#Application Presentation">Application Presentation</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#ApplicationPresentation">Application Presentation</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#Foodfy">Foodfy</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#Foodfy Steps">Foodfy Steps</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#FoodfySteps">Foodfy Steps</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
 
-##Application Presentation
+## Application Presentation
 
 <div align="center">
   <img alt="refactoring_foodfy" src="../Foodfy/refactoring_foodfy/assets/foodfy-refactored.gif" width="100%">
