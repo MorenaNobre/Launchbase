@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --color-dark-header: #011936;
+    --color-two: #465362;
+    --color-three: #82A3A1;
+    --color-four: #92b670;
+    --color-five: #C0DFA1;
+    --color-background: #cad2c5;
+    --color-fonts: #777;
+    --color-active: #f1724f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background);
+}
+main img{
+    height: 55vh;
+    width: 100vw;
+    margin-top: 188px;
+    margin-bottom: 0;
+}
+header{
+    background-color: var(--color-dark-header);
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.links{
+    font-size: 22px;
+}
+.links a + a{
+    margin-left: 32px;
+}
+.links a{
+    text-decoration: none;
+    color: var(--color-background);
+    position: relative;
+}
+.links a.active{
+    font-weight: bold;
+    color: var(--color-active);
+}
+/*Ficar ligada qdo JS*/
+/* .links a + a.active{
+    font-weight: bold;
+    color: var(--color-four);
+} */
+/* .links a:hover{
+    text-decoration: underline;
+} */
+.links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: var(--color-active);
+    left: 0;
+    bottom: -5px;
+}
+.links a:hover::after{
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
