@@ -37,6 +37,8 @@
 
 - [x] [Foodfy](Foodfy)
 
+- [x] [codeSCool](codeSCool)
+
 - [x] [Starting on Frontend](iniciando_no_frontend)
 
 - [x] [Starting on Backend](iniciando_no_backend)
