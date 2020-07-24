@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/3135/3135830.svg" type="image/x-icon">
+
+    {% block head %}
+
+    <title>codeSCool</title>
+    
+    {% endblock %}
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="links">        
+            <a href="/" class="active">Teachers</a>
+            <a href="/students">Students</a>
+        </div>
+
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>
