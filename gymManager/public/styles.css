@@ -190,4 +190,6 @@ button[type="submit"]{
     margin-top: 32px;
     width: 100%;
     color: var(--secondary-color);
+    outline: none;
+    cursor: pointer;
 }

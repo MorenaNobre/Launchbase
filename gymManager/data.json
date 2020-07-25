@@ -1,0 +1,31 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://moguiscoda.com",
+      "name": "Morena Nobre",
+      "birth": 406512000000,
+      "gender": "F",
+      "services": "CodaMuito",
+      "created_at": 1595713644928
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://Codandojson.com",
+      "name": "Moguis",
+      "birth": 435369600000,
+      "gender": "F",
+      "services": "BoraCodar",
+      "created_at": 1595713864991
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://google.com",
+      "name": "Google",
+      "birth": 1320969600000,
+      "gender": "M",
+      "services": "pesquisa",
+      "created_at": 1595713985881
+    }
+  ]
+}
