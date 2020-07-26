@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<form class="card" method="POST" action="/teachers">
-    <section class="avatar" style="border-radius: 20px 0px 0px 20px; background: url(https://source.unsplash.com/collection/895539/800x800) no-repeat center center"></section>
+<form class="card-form" method="POST" action="/teachers">
+    <section class="avatar" style="border-radius: 20px 0px 0px 20px; background: url(https://source.unsplash.com/collection/895539) no-repeat center center"></section>
 
     <section class="details">
 
@@ -44,20 +44,21 @@
         <div class="item">
             <div>Educational Level</div>
             <div>
-                <select name="selector">
-                    <option value="grau1" select>High School</option>
-                    <option value="grau2">University Education</option>
-                    <option value="grau3">Masters Degree</option>
-                    <option value="grau4">Doctorate Degree</option>
+                <select name="educational_level">
+                    <option value="None" selected>-- Select --</option>
+                    <option value="High School">High School</option>
+                    <option value="University Education">University Education</option>
+                    <option value="Masters Degree">Masters Degree</option>
+                    <option value="Doctorate Degree">Doctorate Degree</option>
                 </select>
             </div>
         </div>
 
         <div class="item">
-            <div>Class</div>
+            <div>Class Type</div>
             <div>
-                <span><input type="radio" name="class" value="E" checked>E-learning</span>
-                <span><input type="radio" name="class" value="P">Presential Class</span>
+                <span><input type="radio" name="type_class" value="E-learning" checked>E-learning</span>
+                <span><input type="radio" name="type_class" value="Presential">Presential Class</span>
             </div>
         </div>
 
@@ -67,7 +68,7 @@
                 <input 
                     type="text" 
                     name="lessons"
-                    placeholder="separate the lessons by commas"
+                    placeholder="Separate the lessons by commas"
                 >
             </div>
         </div>
