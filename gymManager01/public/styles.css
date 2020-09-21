@@ -47,10 +47,6 @@ header {
     color: var(--primary-color);
 }
 
-.links a:hover {
-    
-}
-
 .links a::after {
     content: '';
     width: 0;
