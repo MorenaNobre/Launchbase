@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --color-dark-yellow: #ffcc63;
+  --color-light-yellow: #ffdb91;
+  --color-dark-purple: #34325e;
+  --color-light-purple: #9290ac;
+  --color-light-gray: #d3d4d9;
+  --color-background-body: #ecedf0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +18,53 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background-body);
+}
+
+header {
+  background-color: var(--color-dark-purple);
+  width: 100%;
+  padding: 32px;
+  text-align: center;
+}
+
+main img {
+  height: 55vh;
+  width: 100vw;
+  margin-top: 160px;
+  margin-bottom: 0;
+}
+
+.links {
+  font-size: 22px;
+}
+
+.links a + a {
+  margin-left: 32px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--color-light-gray);
+  position: relative;
+}
+
+.links a.active {
+  font-weight: 600;
+  color: var(--color-dark-yellow);
+}
+
+.links a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: var(--color-dark-yellow);
+  left: 0;
+  bottom: -4px;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: width 200ms ease-in-out;
 }
