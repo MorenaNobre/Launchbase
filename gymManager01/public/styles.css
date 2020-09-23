@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: rgb(32, 32, 32);
+    background-color: #202020;
     width: 100%;
     padding: 32px;
     text-align: center;
@@ -65,8 +65,8 @@ header {
 /*=== CARD ===*/
 .card {
     background-color: white;
-    width: 800px;
-    height: 400px;
+    max-width: 800px;
+    min-height: 400px;
     margin: 45px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -82,4 +82,52 @@ header {
     to {
         opacity: 1;
     }
+}
+
+/*===DETAIS===*/
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details h3 {
+    color: var(--primary-color);
+    letter-spacing: 0.7px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--primary-color);
+    letter-spacing: 0.7px;
+    font-weight: 600;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.details .item span {
+    padding: 4px 16px;
+    background-color: var(--primary-color);
+    color: #202020;
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
 }
