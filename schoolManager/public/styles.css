@@ -140,6 +140,50 @@ header {
   border-radius: 16px;
   margin-right: 4px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
+}
+
+/*=== FORM ===*/
+
+input {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+input::placeholder{
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 8px 32px;
+  background-color: var(--color-dark-purple);
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+  font-size: 16px;
+  margin-top: 32px;
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }

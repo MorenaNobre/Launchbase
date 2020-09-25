@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://hotcode.com",
+      "name": "Morena",
+      "birth": 406512000000,
+      "nivel_educacao": "ensino_superior",
+      "tipo_aula": "a_distancia",
+      "materia": "HTML , CSS, Javascript",
+      "created_at": 1601039037856
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://moguiscode.com",
+      "name": "Moguis",
+      "birth": 945648000000,
+      "nivel_educacao": "mestrado",
+      "tipo_aula": "presencial",
+      "materia": "React, ReactNative, NodeJS",
+      "created_at": 1601039183520
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://code4fun.com",
+      "name": "Yohan",
+      "birth": 1090540800000,
+      "nivel_educacao": "ensino_superior",
+      "tipo_aula": "presencial",
+      "materia": "Java, Python, Ruby",
+      "created_at": 1601039291992
+    }
+  ]
+}
