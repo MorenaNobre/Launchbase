@@ -12,5 +12,21 @@ module.exports = {
   
     return age
   
+  },
+
+  date: function(timestamp) {
+    const date = new Date(timestamp)
+
+    //yyyy
+    const year = date.getUTCFullYear()
+
+    //mm
+    const month = date.getUTCMonth() + 1
+
+    //dd
+    const day = date.getUTCDate()
+
+    //return yyyy-mm-dd
+    return `${year}-${month}-${day}`
   }
 }

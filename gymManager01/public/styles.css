@@ -152,7 +152,8 @@ input::placeholder {
     font-weight: normal;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     padding: 8px 32px;
     background-color: var(--primary-color);
     border-radius: 4px;
@@ -160,6 +161,21 @@ button[type="submit"] {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #202020;
+    letter-spacing: 1px;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: #f71212;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
