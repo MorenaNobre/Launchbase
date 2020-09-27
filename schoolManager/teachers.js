@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
+const { age , educacao } = require('./utils')
 
 //show
 exports.show = function(req, res) {
@@ -10,42 +11,6 @@ exports.show = function(req, res) {
   })
 
   if (!foundTeacher) return res.send('Professor(a) não encontrado(a)')
-
-  function age(timestamp) {
-    const today = new Date()
-    const birthDate = new Date(timestamp)
-    
-    let age = today.getFullYear() - birthDate.getFullYear()
-    const month = today.getMonth() - birthDate.getMonth()
-  
-    if (month < 0 || month == 0 && today.getDate() > birthDate.getDate()) {
-      age = age -1
-    }
-  
-    return age
-  }
-
-  function educacao(educacao) {
-    let nivel_educacao = ''
-  
-    switch(educacao) {
-      case "ensino_medio":
-        nivel_educacao = "Ensino Médio"
-        break
-      case "ensino_superior":
-        nivel_educacao = "Ensino Superior"
-        break
-      case "mestrado":
-        nivel_educacao = "Mestrado"
-        break
-      case "doutorado":
-        nivel_educacao = "Doutorado"
-      default:
-        break
-    }
-  
-    return nivel_educacao
-  }
 
   const teacher = {
     ...foundTeacher,

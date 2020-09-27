@@ -32,13 +32,33 @@
     },
     {
       "id": 4,
-      "avatar_url": "http://euensinocodigo.com",
-      "name": "Lulis",
-      "birth": 468979200000,
-      "nivel_educacao": "Ensino Superior",
+      "avatar_url": "http://nkns.com",
+      "name": "Mario",
+      "birth": 430272000000,
+      "nivel_educacao": "ensino_medio",
       "tipo_aula": "presencial",
-      "materia": "Javascript, Java, Pyhon",
-      "created_at": 1601213811659
+      "materia": "Ruby, R",
+      "created_at": 1601218493594
+    },
+    {
+      "id": 5,
+      "avatar_url": "http://com.com",
+      "name": "Maisa",
+      "birth": -401587200000,
+      "nivel_educacao": "doutorado",
+      "tipo_aula": "presencial",
+      "materia": "Mumble, Jumble, Lala",
+      "created_at": 1601218638857
+    },
+    {
+      "id": 6,
+      "avatar_url": "http://nsxjnas.com",
+      "name": "Nando",
+      "birth": 1218153600000,
+      "nivel_educacao": "none",
+      "tipo_aula": "a_distancia",
+      "materia": "mor, ams, skndka,  NSKNDS",
+      "created_at": 1601218681703
     }
   ]
 }
