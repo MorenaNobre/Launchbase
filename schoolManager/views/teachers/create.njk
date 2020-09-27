@@ -8,56 +8,7 @@
 
     <h3>Novo(a) Professor(a)</h3>
 
-    <div class="item">
-      <div>Avatar URL</div>
-      <div>
-        <input type="url" name="avatar_url" placeholder="http://">
-      </div>
-    </div>
-
-    <div class="item">
-      <div>Professor(a)</div>
-      <div>
-        <input type="text" name="name" placeholder="Nome">
-      </div>
-    </div>
-
-    <div class="item">
-      <div>Data de Nascimento</div>
-      <div>
-        <input type="date" name="birth">
-      </div>
-    </div>
-
-    <div class="item">
-      <div>Nível de Educação</div>
-      <div>
-        <select name="nivel_educacao">
-          <option value="none" selected>-- Selecione --</option>
-          <option value="ensino_medio">Ensino Médio</option>
-          <option value="ensino_superior">Ensino Superior</option>
-          <option value="mestrado">Mestrado</option>
-          <option value="doutorado">Doutorado</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="item">
-      <div>Tipo de aula</div>
-      <div>
-        <span><input type="radio" name="tipo_aula" value="a_distancia" checked>À distância</span>
-        <span><input type="radio" name="tipo_aula" value="presencial">Presencial</span>
-      </div>
-    </div>
-
-    <div class="item">
-      <div>Matérias</div>
-      <div>
-        <input type="text" name="materia" placeholder="Separe as matérias por vírgula.">
-      </div>
-    </div>
-
-    <button type="submit">Salvar</button>
+    {% include "teachers/fields.njk" %}
 
   </section>
 </form>
