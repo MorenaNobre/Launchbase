@@ -88,6 +88,7 @@ header {
 
 .details {
     padding: 32px;
+    /* display: flex; */
 }
 
 .details .item {
@@ -164,6 +165,7 @@ a.button {
     font-weight: 600;
     color: #202020;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 a.button {
@@ -178,4 +180,79 @@ a.button {
     color: white;
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+.button-side {
+    display: flex;
+}
+
+#red {
+    background-color: #f71212;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px; 
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*=== INDEX INSTRUCTORS ===*/
+.table-container {
+    display: block;
+    padding: 40px;
+}
+
+.table-container table {
+    border-spacing: 0;
+}
+
+.table-container thead tr th {
+    text-align: left;
+}
+
+th {
+    text-transform: uppercase;
+    color: #777;
+    font-size: 14px;
+}
+
+td, th {
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 0.5px solid var(--primary-color);
+}
+
+tbody tr td:last-child a {
+    background-color: var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.table-container thead tr th:last-child,
+td:last-child {
+    text-align: center;
 }

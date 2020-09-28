@@ -21,10 +21,10 @@ module.exports = {
     const year = date.getUTCFullYear()
 
     //mm
-    const month = date.getUTCMonth() + 1
+    const month = `0${date.getUTCMonth() + 1}`.slice(-2)
 
     //dd
-    const day = date.getUTCDate()
+    const day = `0${date.getUTCDate()}`.slice(-2)
 
     //return yyyy-mm-dd
     return `${year}-${month}-${day}`

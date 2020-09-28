@@ -19,12 +19,14 @@
             name="id" 
             value={{instructor.id}}
           >
-
+          <div class="button-side">
+            <button type="submit">Salvar</button>          
+            <button type="submit" form="form-delete" id="red">Deletar</button>
+          </div>
       </form>
 
       <form id="form-delete" action="/instructors?_method=DELETE" method="POST">
-        <input type="hidden" name="id" value={{instructor.id}}>
-        <button type="submit">Deletar</button>
+        <input type="hidden" name="id" value={{instructor.id}}>       
       </form>
 
     </section>   
