@@ -2,16 +2,16 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "avatar_url": "https://images.unsplash.com/photo-1589329482108-e414c7c6b8c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
       "name": "Morena ",
       "birth": 406512000000,
       "gender": "F",
-      "services": "Musculação, Dança, Web",
+      "services": "Musculação, Dança",
       "created_at": 1601299106753
     },
     {
       "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1551276929-3f75211e0986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=604&q=80",
+      "avatar_url": "https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
       "name": "Raira",
       "birth": 686534400000,
       "gender": "F",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "avatar_url": "https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "avatar_url": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
       "name": "Gabriel",
       "birth": 648172800000,
       "gender": "M",
