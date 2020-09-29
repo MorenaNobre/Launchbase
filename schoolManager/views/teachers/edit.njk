@@ -4,7 +4,7 @@
 
   <div class="card">
 
-    <section class="avatar" style="background: url(https://source.unsplash.com/collection/181462/500x500) no-repeat center center / cover">
+    <section class="avatar" style="background: url({{teacher.avatar_url}}) no-repeat center center / cover">
     </section>
 
     <section class="details">
@@ -19,6 +19,11 @@
             name="id" 
             value={{teacher.id}}
           >
+
+          <div class="button-side">
+            <button type="submit">Salvar</button>
+            <button type="submit" form="form-delete" id="red">Deletar</button>
+          </div>
       </form>
 
       <form id="form-delete" action="/teachers?_method=DELETE" method="post">
@@ -27,7 +32,6 @@
           name="id" 
           value={{teacher.id}}
         >
-        <button type="submit">Deletar</button>
       </form>
 
     </section>
