@@ -25,15 +25,6 @@
   ],
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1589329482108-e414c7c6b8c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
-      "name": "Larissa",
-      "birth": 406512000000,
-      "gender": "F",
-      "services": "Musculação, Dança",
-      "created_at": 1601299106753
-    },
-    {
       "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
       "name": "Maria",
