@@ -7,27 +7,6 @@ exports.index = function(req, res) {
   return res.render('instructors/index', { instructors: data.instructors })
 }
 
-//show
-exports.show = function(req, res) {
-  //req.params
-  const { id } = req.params
-
-  const foundInstructor = data.instructors.find(function(instructor) {
-    return instructor.id == id
-  })
-
-  if (!foundInstructor) return res.send('Não encontramos este instrutor.')
-
-  const instructor = {
-    ...foundInstructor,
-    age: age(foundInstructor.birth),
-    services: foundInstructor.services.split(','),
-    created_at: new Intl.DateTimeFormat('pt-BR').format(foundInstructor.created_at),
-  }
-
-  return res.render('instructors/show', { instructor })
-}
-
 //create
 exports.create = function(req, res) {
   return res.render('instructors/create')
@@ -68,6 +47,27 @@ exports.post = function(req, res) {
   // return res.send(req.body)
 }
 
+//show
+exports.show = function(req, res) {
+  //req.params
+  const { id } = req.params
+
+  const foundInstructor = data.instructors.find(function(instructor) {
+    return instructor.id == id
+  })
+
+  if (!foundInstructor) return res.send('Não encontramos este instrutor.')
+
+  const instructor = {
+    ...foundInstructor,
+    age: age(foundInstructor.birth),
+    services: foundInstructor.services.split(','),
+    created_at: new Intl.DateTimeFormat('pt-BR').format(foundInstructor.created_at),
+  }
+
+  return res.render('instructors/show', { instructor })
+}
+
 //edit - é só a página para edição, não faz o update
 exports.edit = function(req, res) {
 
@@ -86,7 +86,7 @@ exports.edit = function(req, res) {
 
   const instructor = {
     ...foundInstructor,
-    birth: date(foundInstructor.birth)
+    birth: date(foundInstructor.birth).iso
   }
 
   return res.render('instructors/edit', { instructor })

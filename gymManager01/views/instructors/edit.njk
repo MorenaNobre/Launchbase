@@ -9,28 +9,36 @@
     <section class="details">
 
       <form method="POST" action="/instructors?_method=PUT">
-        
+
         <h3>Editar Instrutor(a)</h3>
 
         {% include "instructors/fields.njk" %}
 
-          <input 
+        <input 
             type="hidden" 
             name="id" 
             value={{instructor.id}}
           >
-          <div class="button-side">
-            <button type="submit">Salvar</button>          
-            <button type="submit" form="form-delete" id="red">Deletar</button>
-          </div>
+        <div class="button-side">
+          <button type="submit">Salvar</button>
+          <button type="submit" form="form-delete" id="red">Deletar</button>
+        </div>
       </form>
 
       <form id="form-delete" action="/instructors?_method=DELETE" method="POST">
-        <input type="hidden" name="id" value={{instructor.id}}>       
+        <input 
+          type="hidden" 
+          name="id" 
+          value={{instructor.id}}
+        >
       </form>
 
-    </section>   
+      {% include "../confirm.njk" %}
+
+    </section>
 
   </div>
+
+  
 
 {% endblock content %}
