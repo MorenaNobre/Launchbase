@@ -42,13 +42,19 @@
     <br>
 </p>
 
-    - [x] Estrutura HTML e CSS
-    - [x] Cadastramento de dados
-    - [x] Manipulação dos dados
-    - [x] Formatação de datas
-    - [x] Atualização e deleção de dados
-    - [x] Listando dados
-    - [x] Dados diferenciados entre Instrutores e Membros
+<p>
+
+- [x] Estrutura HTML e CSS
+- [x] Cadastramento de dados
+- [x] Manipulação dos dados
+- [x] Formatação de datas
+- [x] Atualização e deleção de dados
+- [x] Listando dados
+- [x] Dados diferenciados entre Instrutores e Membros
+
+</p>
+
+    
 
 <br>
 
