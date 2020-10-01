@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<form class="card" method="POST" action="/teachers">
+<form class="card" method="POST" action="/students">
   <section class="avatar" style="background: url(https://www.flaticon.com/svg/static/icons/svg/847/847969.svg) no-repeat center center / contain; background-size: 250px;"></section>
   <section class="details">
 
-    <h3>Novo(a) Professor(a)</h3>
+    <h3>Novo(a) Estudante</h3>
 
-    {% include "teachers/fields.njk" %}
+    {% include "students/fields.njk" %}
 
     <button type="submit">Salvar</button>
     

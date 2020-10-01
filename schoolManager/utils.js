@@ -46,6 +46,39 @@ module.exports = {
     }
   
     return nivel_educacao
-  }
-}
+  },
 
+  escolar: function (escolar) {
+    let ano_escolar = ''
+  
+    switch(escolar) {
+      case "none":
+        ano_escolar = "Ano escolar não selecionado."
+        break
+      case "5ano":
+        ano_escolar = "5º ano - ensino fundamental"
+        break
+      case "6ano":
+        ano_escolar = "6º ano - ensino fundamental"
+        break
+      case "7ano":
+        ano_escolar = "7º ano - ensino fundamental"
+        break
+      case "8ano":
+        ano_escolar = "8º ano - ensino fundamental"
+      case "9ano":
+        ano_escolar = "9º ano - ensino fundamental"
+      case "1ano":
+        ano_escolar = "1º ano - ensino médio"
+      case "2ano":
+        ano_escolar = "2º ano - ensino médio"
+      case "3ano":
+        ano_escolar = "3º ano - ensino médio"
+      default:
+        break
+    }
+  
+    return ano_escolar
+  }
+
+}
