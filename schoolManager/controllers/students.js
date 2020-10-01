@@ -4,26 +4,18 @@ const { age , date, escolar } = require('../utils')
 
 //index
 exports.index = function(req, res) {
-  return res.render('students/index', { students: data.students })
-}
 
-//show
-exports.show = function(req, res) {
-  const { id } = req.params
+  const students = []
 
-  const foundStudent = data.students.find(function(student) {
-    return id == student.id
-  })
-
-  if (!foundStudent) return res.send('Estudante não encontrado(a)')
-
-  const student = {
-    ...foundStudent,
-    age: age(foundStudent.birth),
-    ano_escolar: escolar(foundStudent.ano_escolar)
+  for (let student of data.students) {
+    students.push({
+      ...student,
+      ano_escolar: escolar(student.ano_escolar)
+    })
   }
 
-  return res.render('students/show', { student })
+  return res.render('students/index', { students })
+  //  return res.render('students/index', { students: data.students })
 }
 
 //create
@@ -44,7 +36,13 @@ exports.post = function(req, res) {
   let { avatar_url, name, email, birth, ano_escolar, carga_horaria} = req.body
 
   birth = Date.parse(birth)
-  const id = Number(data.students.length + 1)
+
+  let id = 1
+  const lastId = data.students[data.students.length - 1].id
+
+  if(lastId) {
+    id = lastId + 1
+  }
 
   data.students.push({
     id,
@@ -61,8 +59,26 @@ exports.post = function(req, res) {
 
     return res.redirect('/students')
   })
+}
 
-  // return res.send(req.body)
+//show
+exports.show = function(req, res) {
+  const { id } = req.params
+
+  const foundStudent = data.students.find(function(student) {
+    return id == student.id
+  })
+
+  if (!foundStudent) return res.send('Estudante não encontrado(a)')
+
+  const student = {
+    ...foundStudent,
+    age: age(foundStudent.birth),
+    birth: date(foundStudent.birth).birthDay,
+    ano_escolar: escolar(foundStudent.ano_escolar)
+  }
+
+  return res.render('students/show', { student })
 }
 
 //edit
@@ -77,7 +93,7 @@ exports.edit = function(req, res) {
 
   const student = {
     ...foundStudent,
-    birth: date(foundStudent.birth)
+    birth: date(foundStudent.birth).iso
   }
 
   return res.render('students/edit', { student })

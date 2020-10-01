@@ -7,27 +7,6 @@ exports.index = function(req, res) {
   return res.render('teachers/index', { teachers: data.teachers })
 }
 
-//show
-exports.show = function(req, res) {
-  const { id } = req.params
-
-  const foundTeacher = data.teachers.find(function(teacher) {
-    return id == teacher.id
-  })
-
-  if (!foundTeacher) return res.send('Professor(a) não encontrado(a)')
-
-  const teacher = {
-    ...foundTeacher,
-    age: age(foundTeacher.birth),
-    nivel_educacao: educacao(foundTeacher.nivel_educacao),
-    materia: foundTeacher.materia.split(","),
-    created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at),
-  }
-
-  return res.render('teachers/show', { teacher })
-}
-
 //create
 exports.create = function(req, res) {
   return res.render('teachers/create')
@@ -69,6 +48,27 @@ exports.post = function(req, res) {
   // return res.send(req.body)
 }
 
+//show
+exports.show = function(req, res) {
+  const { id } = req.params
+
+  const foundTeacher = data.teachers.find(function(teacher) {
+    return id == teacher.id
+  })
+
+  if (!foundTeacher) return res.send('Professor(a) não encontrado(a)')
+
+  const teacher = {
+    ...foundTeacher,
+    age: age(foundTeacher.birth),
+    nivel_educacao: educacao(foundTeacher.nivel_educacao),
+    materia: foundTeacher.materia.split(","),
+    created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at),
+  }
+
+  return res.render('teachers/show', { teacher })
+}
+
 //edit
 exports.edit = function(req, res) {
   const { id } = req.params
@@ -81,7 +81,7 @@ exports.edit = function(req, res) {
 
   const teacher = {
     ...foundTeacher,
-    birth: date(foundTeacher.birth)
+    birth: date(foundTeacher.birth).iso
   }
 
   return res.render('teachers/edit', { teacher })

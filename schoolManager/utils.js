@@ -20,7 +20,13 @@ module.exports = {
     const month = `0${date.getUTCMonth() + 1}`.slice(-2)
     const day = `0${date.getUTCDate()}`.slice(-2)
 
-    return `${year}-${month}-${day}`
+    return {
+      day,
+      month,
+      year,
+      iso: `${year}-${month}-${day}`,
+      birthDay: `${day}/${month}`
+    }
   },
 
   educacao: function (educacao) {
@@ -66,14 +72,19 @@ module.exports = {
         break
       case "8ano":
         ano_escolar = "8º ano - ensino fundamental"
+        break
       case "9ano":
         ano_escolar = "9º ano - ensino fundamental"
+        break
       case "1ano":
         ano_escolar = "1º ano - ensino médio"
+        break
       case "2ano":
         ano_escolar = "2º ano - ensino médio"
+        break
       case "3ano":
         ano_escolar = "3º ano - ensino médio"
+        break
       default:
         break
     }
