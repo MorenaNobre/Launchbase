@@ -41,15 +41,6 @@
       "gender": "M",
       "services": "PersonalTrainer, Crossfit, Trilha",
       "created_at": 1601299204070
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1514846326710-096e4a8035e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60",
-      "name": "Leticia",
-      "birth": 870998400000,
-      "gender": "F",
-      "services": "Yoga, Relaxamento",
-      "created_at": 1601489792984
     }
   ]
 }
