@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
 
 :root{
-    --color-pink: #fbdfdb;
+    --color-pink: #6e3e1c;
     --color-black: #111111;
+    --color-bg-banner: #c9c7c7;
+    --color-grey-title: #a1a1a1;
     --color-grey: #777777;
-    --color-middle-grey: #444444;
+    --color-middle-grey: #2c2c2c;
+    --color-orange: #e8812a;
 }
 *{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 body{
+    background-color: #272727;
     font-family: 'Roboto', sans-serif;
     columns: var(--color-black);
 }
@@ -30,16 +35,22 @@ header{
     padding-left: 20px;
     text-decoration: none;
     text-align: center;
+    color: var(--color-grey-title);
+}
+.links a:hover {
+    color: var(--color-orange);
 }
 .logo{
     position: absolute;
     padding-left: 20px;
-    top: -5px;
+    top: -18px;
+}
+.logo img {
+    height: 52px;
 }
 .banner{
-    background-color: var(--color-pink);
-    width: 940px;
-    border-radius: 30px;
+    background-color: var(--color-bg-banner);
+    width: 100%;
     margin: 60px auto 20px;
     position: relative;
     height: 366px;
@@ -49,7 +60,7 @@ header{
     width: 60%;
 }
 .banner_title{
-    color: var(--color-black);
+    color: var(--color-middle-grey);
     width: 400px;
     margin: auto;
     margin-top: 100px;
@@ -64,10 +75,16 @@ header{
     text-align: left;
     font-size: 18px;
     line-height: 28px;
+    color: var(--color-middle-grey);
 }
 .banner_img{
     position: absolute;
-    margin: 66px 0 0 600px;
+    margin: -48px 0 0 662px;
+}
+.banner_img img {
+    height: 392px;
+    margin-left: 156px;
+    margin-top: 40px;
 }
 .recipes_content{
     width: 940px;
@@ -76,7 +93,13 @@ header{
 .most_accessed_content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+}
+.accessed_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 92px;
 }
 .quick_recipes{
     margin-bottom: 0px;
@@ -86,24 +109,24 @@ header{
 .image_recipes{
     width: 300px;
     height: 140px;
-    border-radius: 15px;
+    border: 1px solid var(--color-orange);
 }
 .recipes_title{
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-black);
+    color: var(--color-grey-title);
     margin-top: 10px;
 }
 .recipes_author{
     font-size: 14px;
     line-height: 16px;
-    color: var(--color-grey);
+    color: var(--color-orange);
 }
 footer{
     width: auto;
     height: 60px;
     margin: 50px auto 0;
-    background-color: #EEEEEE;
+    background-color: #1b1b1b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,11 +143,11 @@ footer p{
 .content_title{
     font-size: 24px;
     line-height: 28px;
-    color: var(--color-black);
+    color: var(--color-orange);
     margin: 30px 0 30px 0;
 }
 .about_text{
-    color: #444444;
+    color: var(--color-grey-title);
     font-size: 18px;
     line-height: 28px;
     text-align: justify;
@@ -132,19 +155,26 @@ footer p{
 }
 
 /*===RECIPES DETAILS===*/
+.recipes_content_detail{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 92px;
+}
 .recipe_image{
     width: 940px;
     height: 280px;
     padding-bottom: 20px;
 }
 .recipe-image img{
-    border-radius: 15px;
+    border-radius: none;
+    border: 1px solid var(--color-orange);
 }
 .recipe-title{
     text-align: center;
     font-size: 36px;
     line-height: 42px;
-    color: var(--color-black);
+    color: var(--color-orange);
+    margin-top: 32px;
 }
 .recipe-author{
     text-align: center;
@@ -152,37 +182,45 @@ footer p{
     line-height: 24px;
     color: var(--color-grey);
 }
+.recipe-procedure{
+    margin-top: 32px;
+}
 .recipe-procedure h2{
     font-size: 24px;
     line-height: 28px;
-    color: var(--color-black);
+    color: var(--color-orange);
     margin: 20px 0 20px;
 }
 .recipe-procedure li{
     margin-left: 15px;
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-middle-grey);
+    color: var(--color-grey-title);
 }
 .recipe-procedure p{
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-middle-grey);
+    color: var(--color-grey-title);
     text-align: justify;
 }
 
 /*===SHOWHIDE===*/
 .wrapper {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 16% 1fr;
+    align-items: center;
 }
 .showhide_btn{
     font-size: 14px;
     line-height: 24px;
-    color: var(--color-middle-grey);
-    text-align: justify;
+    color: #1b1b1b;
+    text-align: center;
     margin: 23px 0;
     cursor: pointer;
+    background-color: var(--color-orange);
+    padding: 6px;
+    border-radius: 18px;
+
 }
 .recipe_showhide{
     display: block;
