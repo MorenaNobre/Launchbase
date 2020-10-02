@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://icon-library.com/images/recipe-icon/recipe-icon-4.jpg" type="image/x-icon" />
+    {% block head %}
+        <title>Foodfy</title>        
+    {% endblock %}
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="links">
+            <a href="/about">Sobre</a>
+            <a href="/recipes">Receitas</a>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>&copy; Todos os direitos reservados. Receitas Foodfy 2020</p>
+    </footer>
+    <script src="/scripts.js"></script>
+
+</body>
+</html>
