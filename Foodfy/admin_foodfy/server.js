@@ -39,13 +39,13 @@ server.get('/recipe-detail/:id', function(req, res) {
     return res.render('recipe-detail', {item: recipe})
 })
 
-server.get('/not-found', function(req, res) {
-    return res.render('not-found')
-})
-
-// server.use(function(req, res) {
-//     res.status(404).render('not-found')
+// server.get('/not-found', function(req, res) {
+//     return res.render('not-found')
 // })
+
+server.use(function(req, res) {
+    res.status(404).render('not-found')
+})
 
 server.listen(3000, function() {
     console.log('server is running port:3000')
