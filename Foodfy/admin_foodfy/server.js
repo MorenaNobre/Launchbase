@@ -1,15 +1,15 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
 const routes = require('./routes')
-
-const server = express()
 // const recipes = require('./data-recipes')
 
-server.set('view engine', 'njk')
+const server = express()
 
 server.use(express.static('public'))
 server.use(express.static('assets'))
 server.use(routes)
+
+server.set('view engine', 'njk')
 
 nunjucks.configure('views', {
     express: server,
