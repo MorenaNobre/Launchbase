@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="https://icon-library.com/images/recipe-icon/recipe-icon-4.jpg" type="image/x-icon" />
     {% block head %}
-        <title>Foodfy</title>        
+        <title>Foodfy-Admin</title>        
     {% endblock %}
     <link rel="stylesheet" href="/styles.css">
 </head>
@@ -12,15 +12,11 @@
 <body>
 
     <header>
-        <div class="logo">
-            <a href="/">
-                <img src="assets/logo-foodfy.png" alt="Logo">
+        <div class="logo-admin">
+            <a href="/admin/recipes/create">
+                <img src="/assets/logo-foodfy.png" alt="Logo">
             </a>
         </div>
-        <nav class="links">
-            <a href="/about" class="active">Sobre</a>
-            <a href="/recipes">Receitas</a>
-        </nav>
     </header>
 
     {% block content %}{% endblock %}

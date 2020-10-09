@@ -31,13 +31,30 @@ header{
     margin-left: 200px;
 }
 .links a{
-    padding-left: 20px;
+    /* padding-left: 20px; */
     text-decoration: none;
     text-align: center;
     color: var(--color-grey-title);
+    position: relative;
 }
 .links a:hover {
     color: var(--color-orange);
+}
+.links a.active{
+    font-weight: bold;
+    color: var(--color-orange);
+}
+.links a:hover::after{
+    content: '';
+    width: 100%;
+    height: 1.6px;
+    background-color: var(--color-orange);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+.links a:first-child{
+    margin-right: 16px;
 }
 .logo{
     position: absolute;
@@ -250,4 +267,14 @@ footer p{
 
 .not-found img {
     height: 450px;
+}
+
+/*=== ADMIN ===*/
+.logo-admin {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.logo-admin img {
+    height: 52px;
 }
