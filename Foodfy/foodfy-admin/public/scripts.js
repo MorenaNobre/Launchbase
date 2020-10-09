@@ -12,12 +12,12 @@ const showHide = document.querySelectorAll('.showhide_btn')
 
 for (let i = 0; i < showHide.length; i++) {
     showHide[i].addEventListener('click', function() {
-        if(showHide[i].innerHTML == 'Esconder') {
+        if(showHide[i].innerHTML == 'Mostrar') {
             ingredient[i].classList.add('active')
-            showHide[i].innerHTML = 'Mostrar'
+            showHide[i].innerHTML = 'Esconder'
         } else {
             ingredient[i].classList.remove('active')
-            showHide[i].innerHTML = 'Esconder'
+            showHide[i].innerHTML = 'Mostrar'
         }
     })
 }
